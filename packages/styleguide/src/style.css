@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#single-spa-application\:\@cotec\/app1 {
+  @apply flex-1 flex;
+}
+
+#single-spa-application\:\@cotec\/app2 {
+  @apply flex-1 flex;
+}

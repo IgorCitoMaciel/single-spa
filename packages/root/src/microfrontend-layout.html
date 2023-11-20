@@ -1,0 +1,40 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main class="flex flex-col h-screen w-screen">
+    <nav>
+      <application name="@cotec/navbar"></application>
+    </nav>
+    <route default>
+      <application name="@single-spa/welcome"></application>
+    </route>
+
+    <route path="/app1">
+      <application className="app1" name="@cotec/app1"></application>
+    </route>
+
+    <route path="/app2">
+      <application name="@cotec/app2"></application>
+    </route>
+
+    <route path="/app-home">
+      <application name="@cotec/app-home"></application>
+    </route>
+  </main>
+</single-spa-router>
